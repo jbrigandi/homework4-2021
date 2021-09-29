@@ -41,8 +41,8 @@ body{
 }
 
 h1{
-  color: #b92751;
-  font-size: 32px;
+  color: #c12258;
+  font-size: 2em;
   text-align: center;
   line-height: 2;
   
@@ -60,7 +60,7 @@ p{
 
 a{
   font-size: 16px;
-  color: #c12258;
+  color: #b21f50;
   text-decoration-style: wavy;
   text-decoration-color: #b92751;
   
@@ -75,30 +75,40 @@ a{
 
 td{
   text-align: center;
-  border-top: 2px #000000 ;
+  border-top: 2px solid #000000 ;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;  
+  padding-bottom: 10px; 
+   
 }
 
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+tr:nth-child(even){
+  background-color: #d1d1d1;
+}
 
 .colhead{
   color: #FFFFFF;
   min-width: 125px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 0px;
-  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
   background-color: #7e0825;
 }
 
 .rowhead{
-  border: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000 ;
 
 }
+
 
 
 table{
@@ -108,11 +118,27 @@ table{
   border-radius: 50px;
 }
 
+tbody tr:hover{
+  background-color: rgba(126, 8, 37, 0.25);
+}
+
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
 thead tr:first-child th:first-child{
-
+    border-top-left-radius: 50px;
 }
+
+thead tr:first-child th:last-child{
+  border-top-right-radius: 50px;
+}
+
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 50px;
+} 
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
+} 
 
 /*Add selectors and rules here*/
 
@@ -124,4 +150,7 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

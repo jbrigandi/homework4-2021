@@ -118,9 +118,8 @@ table{
   border-radius: 50px;
 }
 
-tr:hover{
-  background-color: #7e0825;
-  opacity: 0.25;
+tbody tr:hover{
+  background-color: rgba(126, 8, 37, 0.25);
 }
 
 /* I gave you the selector, but not the property-value pair. 

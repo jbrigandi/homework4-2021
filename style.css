@@ -25,20 +25,24 @@ caption{
 /*END STARTER CODE*/
 
 body{
+  font-family: "Andika", sans-serif;
+  background: url('downloads/hw4-2021-main/images/pigeon-background.JPEG') #dddddd;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
-  background-size: cover ;
-  background-position: center;
+  
+  
 
   /*Req 1*/
 }
 
 h1{
-  color: #c12258;
+  color: #b92751;
   font-size: 32px;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
   line-height: 2;
   
 
@@ -57,42 +61,67 @@ a{
   font-size: 16px;
   color: #c12258;
   text-decoration-style: wavy;
+  text-decoration-color: #b92751;
   
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
-
+*:focus{
+  border: 3px dashed #417243 ;
+}
 
 
 td{
+  text-align: center;
+  border-top: #000000 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+ 
   
 }
 
 
 .colhead{
   color: #FFFFFF;
-
+  min-width: 125px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0825;
 }
 
 .rowhead{
+  border-style: solid 2px;
 
 }
 
 
 table{
-    border: 5px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #000000;
+  border-radius: 50px;
 }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+
+}
 
 /*Add selectors and rules here*/
 
 
 
 footer{
+  min-height: 75px;
   width:100%;
   background:#000000;
   text-align:center;

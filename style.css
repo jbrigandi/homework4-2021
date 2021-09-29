@@ -26,7 +26,8 @@ caption{
 
 body{
   font-family: "Andika", sans-serif;
-  background: url('downloads/hw4-2021-main/images/pigeon-background.JPEG') #dddddd;
+  background-image: url("images/pigeon-background.JPEG");
+  background-color: #dddddd;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover ;
@@ -74,7 +75,7 @@ a{
 
 td{
   text-align: center;
-  border-top: #000000 2px;
+  border-top: 2px #000000 ;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -98,7 +99,7 @@ td{
 }
 
 .rowhead{
-  border-style: solid 2px;
+  border: 2px solid #000000;
 
 }
 
